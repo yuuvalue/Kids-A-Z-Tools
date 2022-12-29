@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_extName__",
+    "short_name": "__MSG_extShortName__",
+    "version": "0.1.0",
+    "homepage_url": "https://github.com/yuuvalue/Kids-A-Z-Tools",
+    "default_locale": "ja",
+    "description": "__MSG_extDescription__",
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "__MSG_actionDefaultTitle__",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.kidsa-z.com/main*"
+            ],
+            "css": [
+                "css/content-styles.css"
+            ],
+            "js": [
+                "js/jquery-3.6.3.min.js",
+                "js/content-script.js"
+            ]
+        }
+    ]
+}
