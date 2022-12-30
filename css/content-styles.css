@@ -7,7 +7,7 @@
     margin-left: -75px;
 }
 
-.x_str {
+#x-str {
     background: #fff;
     border: solid 2px #0C5B8E;
     border-right: none;
@@ -37,4 +37,23 @@
     vertical-align: middle;
     width: 3.5em;
     outline: none;
+}
+
+@keyframes blinking_bg {
+    0% {
+        background: #fff;
+    }
+
+    50% {
+        background: #ff9100;
+    }
+
+    100% {
+        background: #fff;
+    }
+
+}
+
+.speed-num-changed{
+    animation: flush_bg 200ms ease 3;
 }
