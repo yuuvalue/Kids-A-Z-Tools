@@ -24,8 +24,14 @@ $(function () {
         }
     };
 
+    function changePlaybackRate() {
+        document.getElementById("book-player").playbackRate = Number($("#speed-num").val());
+        document.getElementById("book-player").defaultPlaybackRate = Number($("#speed-num").val());
+    }
+
     function mouse_not_push() {
         pushing_flag = 0;
+        setTimeout(changePlaybackRate(), 125);
         if (push_count >= 1) {
             clearTimeout(timer);
         }
@@ -58,5 +64,9 @@ $(function () {
         mouse_not_push();
     }).mouseover(function () {
         mouse_not_push();
+    });
+
+    $("#speed-num").change(function () {
+        changePlaybackRate();
     });
 });
