@@ -1,0 +1,18 @@
+{
+    "extName": {
+        "message": "Kids A-Z Tools",
+        "description": "Extension name."
+    },
+    "extShortName": {
+        "message": "KA-ZTools",
+        "description": "Extension Short Name."
+    },
+    "extDescription": {
+        "message": "Kids A-Zをより使いやすくするためのブラウザ拡張機能です。",
+        "description": "Extension description."
+    },
+    "actionDefaultTitle": {
+        "message": "Kids A-Z Toolsについて",
+        "description": "Action Default Title."
+    }
+}

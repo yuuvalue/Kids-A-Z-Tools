@@ -1,0 +1,59 @@
+.speed-controller {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    z-index: 1;
+    width: 150px;
+    margin-left: -75px;
+}
+
+#x-str {
+    background: #fff;
+    border: solid 2px #0C5B8E;
+    border-right: none;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-sizing: border-box;
+    color: #222;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 4px 0 5px 6px;
+    vertical-align: middle;
+}
+
+#speed-num {
+    background: #fff;
+    border: solid 2px #0C5B8E;
+    border-left: none;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-sizing: border-box;
+    color: #222;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 4px 6px 5px 0;
+    vertical-align: middle;
+    width: 3.5em;
+    outline: none;
+}
+
+@keyframes blinking_bg {
+    0% {
+        background: #fff;
+    }
+
+    50% {
+        background: #ff9100;
+    }
+
+    100% {
+        background: #fff;
+    }
+
+}
+
+.speed-num-changed{
+    animation: flush_bg 200ms ease 3;
+}
